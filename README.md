@@ -1,2 +1,2 @@
 # Week-2
-code201 week 2
+Week 2 of Code 201.
