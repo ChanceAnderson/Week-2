@@ -11,7 +11,17 @@ var pike = {
   minHourlyCust: 23,
   maxHourlyCust: 65,
   avgCookiesCustom: 6.3,
+  data: [],
 };
+
+for(var i; i <= 12; i++){
+    var pikeEstimate = Math.floor(Math.random() * 65) + 23;
+    console.log(i + ' am: ' + pikeEstimate + ' cookies');
+    pike.data.push(pikeEstimate);
+  };
+
+
+
 var seaTac = {
   minHourlyCust: 3,
   maxHourlyCust: 24,
@@ -31,12 +41,4 @@ var alki = {
   minHourlyCust: 2,
   maxHourlyCust: 16,
   avgCookiesCustom: 4.6,
-};
-
-for(var i = 1; i <= 6; i++){
-  if(i >= 12){
-    i = 1;
-  }
-  var pikeEstimate = Math.floor(Math.random() * 65) + 23;
-  console.log(i + ' am: ' + pikeEstimate + ' cookies');
 };
