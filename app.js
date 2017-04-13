@@ -45,19 +45,27 @@ var alki = {
 
 //Cookies for every hour thru closing
 var cookieHourly = function(place){
-
   //creates random number of customers
   var randomNumCust = function(place){
     return Math.floor(Math.random() * (place.maxHourlyCust - place.minHourlyCust + 1)) + place.minHourlyCust;
   };
 
   //create simulated number of cookies per hour
-  var simCookieHr = place.avgCookiesCustom * randomNumCust(place);
+  var simCookieHr = function(){
+    place.avgCookiesCustom * randomNumCust(place);
+  };
 
+
+//create a random number of total cookies for each hour
   for(var i = 6; i <= 20; i++){
-    console.log(i + ' am: ' + simCookieHr + ' cookies');
-
+    var cookies = simCookieHr() + simCookieHr();
+    console.log(i + ' am: ' + simCookieHr() + ' cookies');
+    cookies;
   };
 };
 
-console.log(cookieHourly(alki));
+var domPlace = function(place){
+  console.log(cookieHourly(place));
+  var div = document.createElement('div');
+  var ul = document.createElement('ul');
+  var li = document.createElement('li');
