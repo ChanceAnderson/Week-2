@@ -1,0 +1,43 @@
+
+/* reset */
+
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #2980B9;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+#title {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#img {
+  width: 250px;
+  height: 100px;
+}
+
+#title-text {
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 30px;
+}
+
+#left-box {
+  width: 700px;
+  height: 600px;
+  margin-left: 25px;
+  border-radius: 5px;
+  background-color: white;
+}
